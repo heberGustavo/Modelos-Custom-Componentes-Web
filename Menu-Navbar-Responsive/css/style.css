@@ -89,14 +89,15 @@ nav {
   display: none;
 }
 
+.mobile{
+  width: 74%;
+}
+
 .menu-mobile{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: blue; 
-    position: fixed;
-    right: 30px;
-    top: 10px;
     cursor: pointer;
     box-shadow: 0 0 0 0 blue, 0 0 0 0 blue; /*Para resolver bug de linha*/
     transition: box-shadow 1s ease-in-out;
@@ -170,6 +171,7 @@ header nav .itens-menu-mobile{
   position: absolute; /*Fica por cima de qualquer elemento*/
   top: 50%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
   opacity: 0; /*Mostra somente quando tiver aberto - */
   transition: .19s .5s cubic-bezier(0.21, 1.04, 0.31, 1.09);
@@ -195,9 +197,11 @@ header nav .itens-menu-mobile li{
   #conteudo-menu-mobile{
     display: block;
   }  
+
   #conteudo-menu-web{
     display: none;
   }
+
  }
 
 @media (max-width: 992px) {
